@@ -1,6 +1,8 @@
 # aviris
 # ea-2021-final-project-fire-histories-for-hydrologic-modeling
 
+# Project Description
+
 This is a repository for a watersheds and biodiversity project through CU Boulder's Earth Lab. The project aims to produce a classification system for landscapes surrounding a watershed from remote sensing data. The data collected were chemical signatures surrounding the Russian River Watershed in northern California. Using additional topographical maps, we create a reliable method for drawing conclusions about a landscape based on those chemicals. Although this project uses short range flight imaging, the future of chemical analysis lies in satellite technology, which will proliferate the amount of chemical data available. If we can contribute to the advancement of how to aggragate large amounts of chemical data efficiently, this project will be useful for future chemical analysis. The workflow in this repository is initially geared towards piecing together a mosaic of flight images, and ends with k-means clustering, as well as a correspondence analysis. The workflow may be useful to someone who is working with a geometric boundary within linear flight patterns. 
 
 # Workflow
@@ -35,5 +37,5 @@ Using rioxarray, ten raster files (one chemical at a time) are clipped to the Ru
 * gdal-nitrogen.ipynb
     * Using GDAL library, the notebook is only used for data processing/clipping and writing new raster files which are smaller and easier to download. The notebook also plots a map of the nitrogen chemical signatures within the boundary. The geotif files in this notebook are processed as numpy arrays. 
 
-
-
+*Note 1: No helper scripts are currently required for this repository.
+*Note 2: The repository as of 5/19/2021 contains notebooks for chemical layer processing only. Additional steps in the workflow will be completed through Summer 2021, and additional notebooks will be added as they are written to combine and analyze the data. The readme file will be updated accordingly to reflect changes to the repositoryw ith time.
