@@ -1,0 +1,56 @@
+name: earth-analytics-python
+channels:
+  - conda-forge
+dependencies:
+  # Core scientific python
+  - numpy
+  - matplotlib
+  - python=3.6
+
+  # extentions
+  - autopep8
+
+  # Geo stuff
+  - geopy
+  - geopandas
+  - rasterio
+
+  - gdal
+  - libgdal
+
+
+  # natural language processing
+  - tweepy
+  - nltk
+
+  # Jupyter Environment
+  - notebook
+  - ipython
+  - jupyter_contrib_nbextensions
+  - jupyterlab
+  - nb_conda
+
+
+
+  - subprocess
+  - rioxarray
+  - xarray
+  - osgeo
+  - earthpy
+  - shapely
+  - tifffile
+	
+
+
+
+  - pip:
+      # Utilities
+      - download
+      - nbclean
+      - mne
+      - tqdm
+      - kiwisolver
+
+      # more ea stuff
+
+      - git+https://github.com/earthlab/earthpy.git@af51f956ed17b4d9ebf32623c23a8c0b9f8d265d
